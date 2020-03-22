@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<style>
+		form {
+		    margin: auto;
+		    width: 35%;
+		}
+	</style>
+	<head>
+	    <title>Rumor Detector in Tweets</title>
+	</head>
+	<body>
+		<div class="jumbotron text-center" align = 'center'>
+		    <h1>Rumor Detector</h1> 
+		    <p>Rumor Detector for Twitter tweets</p> 
+		</div>
+		<div class="container-fluid">
+	  		<form action="{{ url_for('main') }}" method="POST">
+		    	<fieldset>
+		        	<legend>Input values:</legend>
+		        	Tweet ID:
+		        	<input name="tweet_id" type="string" required>
+		  	    	<input type="submit">
+		    	</fieldset>
+			</form>
+			<div>
+			</div>
+			<br> <br>
+			<div align="center">
+			    {% if result %}
+			        {% for variable, value in original_input.items() %}
+			            <b>{{ variable }}</b> : {{ value }}
+			        {% endfor %}
+			        <br>
+			        <br> <b>Predicted flare: </b>
+			           <p style="font-size:50px">{{ result }}</p>
+			    {% endif %}
+			</div>
+		</div>
+	</body>
+</html>
