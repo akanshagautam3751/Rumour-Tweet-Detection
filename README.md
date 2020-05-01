@@ -1,7 +1,7 @@
-# Rumor-Tweets-Detector
+# Rumour-Tweet-Detection
 Twitter
 
-Rumor Tweets Detector is a web application which detects whether the mentioned tweet is a rumored tweet or not using Machine Learning Algorithm. Link of the deployed web application : https://rumor-tweet-detector.herokuapp.com/
+Rumour Tweet Detection is a web application which detects whether the mentioned tweet is a rumored tweet or not using Machine Learning Algorithm. Link of the deployed web application : https://rumor-tweet-detector.herokuapp.com/
 
 
 ## Directory Structure
@@ -12,7 +12,7 @@ Rumor Tweets Detector is a web application which detects whether the mentioned t
 - templates: contain the mail html file which will render when running the application
 
 ## Introduction
-Rumor Tweets Detector application has been built purely on python programming language. This application has been deployed using Flask web framework and then hosted on Heroku servers.
+Rumour Tweet Detection application has been built purely on python programming language. This application has been deployed using Flask web framework and then hosted on Heroku servers.
  
 ## Project Execution
 - Open the terminal
